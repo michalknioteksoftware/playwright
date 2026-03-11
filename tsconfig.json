@@ -3,10 +3,10 @@
     "target": "ESNext",
     "module": "CommonJS",
     "moduleResolution": "Node",
-    "types": ["node", "@playwright/test"],
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node", "@playwright/test"]
   },
   "include": ["**/*.ts"]
 }

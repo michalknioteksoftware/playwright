@@ -3,4 +3,9 @@ services:
     build: .
     environment:
       - BASE_URL=http://host.docker.internal:8000
+    volumes:
+      - ./tests:/tests/tests
+      - ./test-results:/tests/test-results
+      - ./playwright.config.ts:/tests/playwright.config.ts:ro
+      - ./tsconfig.json:/tests/tsconfig.json:ro
     ipc: host
