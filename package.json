@@ -1,0 +1,15 @@
+{
+  "name": "playwright-docker-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "codegen": "playwright codegen",
+    "test:docker": "docker compose exec playwright-tests npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "typescript": "^5.6.0"
+  }
+}

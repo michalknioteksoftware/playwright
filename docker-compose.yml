@@ -1,0 +1,6 @@
+services:
+  playwright-tests:
+    build: .
+    environment:
+      - BASE_URL=http://host.docker.internal:8000
+    ipc: host
